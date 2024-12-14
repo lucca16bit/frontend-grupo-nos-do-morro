@@ -56,6 +56,10 @@ header {
     cursor: pointer;
 }
 
+.header-navigation a.active {
+    color: var(--primary-color-orange); 
+}
+
 @media screen and (max-width: 768px) {
     .header-logo img {
         width: 40px;
