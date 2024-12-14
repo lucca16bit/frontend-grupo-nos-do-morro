@@ -33,7 +33,6 @@ h1 {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
 }
 
 .transparencia-item {
@@ -89,29 +88,6 @@ h1 {
     color: var(--primary-color-white);
 }
 
-.status-content {
-    text-align: left;
-    margin: 0 6em;
-}
-
-#status-title {
-    width: 100%;
-}
-
-.status-content p {
-    width: 50%;
-    margin: 1.5em 0;
-    font-family: "Avenir Light";
-    font-size: 25px;
-}
-
-.status-content hr {
-    width: 5em;
-    margin-top: -2em;
-    border: 0;
-	border-top: 5px solid var(--primary-color-brown);
-}
-
 @media screen and (max-width: 768px) {
     .transparencia-list-item ul li {
         margin: 0 0;
@@ -135,7 +111,13 @@ h1 {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .status-content p {
-        width: 100%;
+    #status {
+        margin-top: -2em;
+    }
+}
+
+@media screen and (min-width: 1660px){
+    .transparencia-content {
+        width: 70%;
     }
 }
