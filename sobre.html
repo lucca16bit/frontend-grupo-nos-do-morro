@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nós do Morro</title>
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/component/header.css">
+    <link rel="stylesheet" href="styles/sobre.css">
+
+    <script src="js/header.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</head>
+<body>
+    <header class="header-container" id="header">
+        <button onclick="toggleSidebar()" class="header-btn-icon">
+            <img src="public/list.svg" alt="" srcset="">
+        </button>
+        <div class="header-logo">
+            <img
+                src="assets/icons/nos-do-morro_logo_fundo-branco.png" 
+                alt="LOGO"
+            >
+        </div>
+
+        <div class="header-navigation" id="header-navigation">
+            <button onclick="toggleSidebar()" class="header-btn-icon">
+                <img src="public/x-lg.svg" alt="" srcset="">
+            </button>
+            <a href="index.html" class="active">
+                INÍCIO
+            </a>
+            <a href="contato.html">
+                CONTATO
+            </a>
+            <a href="sobre.html">
+                SOBRE NÓS
+            </a>
+            <a href="transparencia.html">
+                TRANSPARÊNCIA
+            </a>
+        </div>
+    </header>
+    <main tabindex="0" onclick="closeSidebar()" class="main-container" id="content">
+        <h1>SOBRE NÓS</h1>
+        <hr>
+        <section class="article-content">
+            <p>
+                O Grupo Nós do Morro é uma Associação Cultural Sem Fins Lucrativos que nasceu há quase quatro décadas no Vidigal, movido pelo sonho de Guti Fraga de transformar vidas através da arte e inspirar pessoas. Com a missão de “dar acesso à arte, à educação e à cultura a quem não tem” criando oportunidades para que crianças, jovens e adultos moradores do Vidigal.
+            </p>
+            <p>
+                Nossa trajetória é marcada por produções que encantam palcos e telas ao redor do mundo, do Brasil à Europa, América do Norte e África. Com uma metodologia que valoriza o coletivo, formamos artistas que levam o nome do Vidigal além das fronteiras, conquistando prêmios, aplausos e reconhecimento global.
+            </p>
+            <p>
+                Somos resistência, inspiração e inovação. Aqui, acreditamos que a arte não só colore a vida, mas transforma realidades e constrói futuros. Bem-vindos ao Grupo Nós do Morro: onde sonhos nascem e ganham o mundo.
+            </p>
+        </section>
+
+        <section class="sobre-imagens-container">
+            <div class="sobre-imagens-content">
+                <img 
+                    src="/assets/imgs/Gutifraga1.jpg" 
+                    alt="Diretoria"
+                    id="foto-diretoria"
+                >
+            </div>
+            <div class="sobre-apresentacao-content">
+                <h1>Fundador</h1>
+                <hr>
+                <p>Guti Fraga</p>
+            </div>
+            <div class="sobre-apresentacao-content">
+                <h1>Diretoria</h1>
+                <hr>
+                <p>Marcelo Melo</p>
+                <p>Fatima Domingues</p>
+                <p>Babu Santana</p>
+                <p>Luis Paulo Correa e Castro</p>
+                <h1>Gestão</h1>
+                <hr>
+                <p>Tatiana Delfina</p>
+            </div>
+            <div class="sobre-imagens-content">
+                <img 
+                    src="/assets/imgs/foto diretora.jpeg" 
+                    alt="Diretoria"
+                    id="foto-diretoria"
+                >
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <h4>Grupo Nós do Morro 2024 ©</h4>
+    </footer>
+</body>
+</html>
