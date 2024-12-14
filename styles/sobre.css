@@ -8,9 +8,11 @@ h1 {
     font-size: 18px;
     font-style: normal;
     text-align: left;
-    width: 80%;
-    margin: 5em auto;
+    width: 50%;
+    margin: 0 auto;
 }
+
+
 
 .article-content p {
     margin: 2em 0;

@@ -6,7 +6,7 @@ let showSidebar      = false;
 function toggleSidebar() {
     showSidebar = !showSidebar;
     if (showSidebar) {
-        navigationHeader.style.marginLeft = '-10vw';
+        navigationHeader.style.marginLeft = '-5vw';
         navigationHeader.style.animationName = 'showSidebar';
         content.style.filter = 'blur(2px)';
     } else {

@@ -3,18 +3,34 @@ h1 {
     margin: 1em 0;
 }
 
+#main-title {
+    margin-bottom: -0.8em;
+}
+
 .article-content {
     font-family: "Avenir Light";
     font-size: 18px;
     font-style: normal;
     text-align: left;
-    width: 80%;
+    width: 50%;
     margin: 5em auto;
+}
+
+.article-content p {
+    margin: 2em 0;
+}
+
+.transparencia-container {
+    width: 100%;
+    background-color: var(--secondary-color-brown);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .transparencia-content {
     background-color: var(--secondary-color-brown);
-
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
@@ -47,17 +63,18 @@ h1 {
 }
 
 .termo-content {
+    width: 80%;
     background-color: var(--secondary-color-brown);
     padding: 1em;
     text-align: center;
 }
-
 .termo-content h1 {
     color: var(--primary-color-orange);
     font-size: 35px;
 }
 
 .termo-list-item {
+    width: 80%;
     text-align: left;
 }
 
@@ -82,12 +99,13 @@ h1 {
 }
 
 .status-content p {
+    width: 50%;
     margin: 1.5em 0;
     font-family: "Avenir Light";
     font-size: 25px;
 }
 
-hr {
+.status-content hr {
     width: 5em;
     margin-top: -2em;
     border: 0;
@@ -95,6 +113,19 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+    .transparencia-list-item ul li {
+        margin: 0 0;
+        margin-left: -1.5em;
+    }
+
+    .termo-list-item {  
+        margin-left: 1em;
+    }
+
+    .termo-list-item ul li {
+        margin: 1em 1em;
+    }
+
     .article-content {
         width: 80%;
     }
@@ -102,5 +133,9 @@ hr {
     .transparencia-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .status-content p {
+        width: 100%;
     }
 }

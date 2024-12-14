@@ -57,8 +57,10 @@ header {
 
 @media screen and (max-width: 768px) {
     .header-logo img {
-        width: 45px;
+        width: 40px;
+        margin-right: 1em;
     }
+
 
     .header-btn-icon {
         display: block;
@@ -78,6 +80,6 @@ header {
 
     @keyframes showSidebar {
         from {margin-left: -100vw;}
-        to {margin-left: -10vw;}
+        to {margin-left: -5vw;}
     }
 }
