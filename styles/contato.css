@@ -1,0 +1,92 @@
+p, h3 {
+    font-family: "Avenir Light";
+}
+
+.formulario-container {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.form-content form input {
+    border: 1.5px solid var(--primary-color-brown);
+    font-family: "Avenir Light";
+    padding-left: 2em;
+    width: 40vh;
+    height: 3em;
+    margin-bottom: 0.5em;
+}
+
+.form-content form textarea {
+    border: 1.5px solid var(--primary-color-brown);
+    font-family: "Avenir Light";
+    padding-left: 2em;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+    width: 40vh;
+    resize: none;
+}
+
+.btn-enviar {
+    background-color: var(--secondary-color-white);
+    font-family: "Avenir Light";
+    font-weight: bolder;
+    padding: 0.7em 2.5em;
+    cursor: pointer;
+    border: none;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none; 
+}
+
+.endereco-container {
+    margin-top: 0; 
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+.endereco-content {
+    margin-bottom: 3em;
+}
+
+.endereco-content h3 {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+.endereco-content a {
+    display: inline-block; 
+    margin-right: 1em;
+}
+
+.endereco-content img {
+    width: 40px;
+    margin: 0; 
+}
+
+.map-container {
+    margin-top: 4em;
+    width: 100%;
+    height: 62vh;
+}
+
+@media screen and (max-width: 768px) {
+    .formulario-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

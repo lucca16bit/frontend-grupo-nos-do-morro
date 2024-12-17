@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/component/header.css">
+    <link rel="stylesheet" href="styles/contato.css">
     <link rel="shortcut icon" href="assets/icons/nos-do-morro_logo_fundo-branco.png" type="image/x-icon">
 
     <script src="js/header.js" defer></script>
@@ -27,22 +28,63 @@
             <button onclick="toggleSidebar()" class="header-btn-icon">
                 <img src="public/x-lg.svg" alt="" srcset="">
             </button>
-            <a href="index.html">
+            <a href="./index.html">
                 INÍCIO
             </a>
-            <a href="contato.html"  class="active">
+            <a href="./contato.html"  class="active">
                 CONTATO
             </a>
-            <a href="sobre.html">
+            <a href="./sobre.html">
                 SOBRE NÓS
             </a>
-            <a href="transparencia.html">
+            <a href="./transparencia.html">
                 TRANSPARÊNCIA
             </a>
         </div>
     </header>
     <main tabindex="0" onclick="closeSidebar()" class="main-container" id="content">
-        <h1>Em desenvolvimento</h1>
+
+        <div class="titulo">
+            <h1>Contato</h1>
+        </div>
+
+        <section class="formulario-container">
+            <div class="form-content">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="name" placeholder="Nome" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                    <input type="number" name="number" placeholder="Telefone" autocomplete="off" required>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar</button> 
+                </form>
+            </div>
+            <div  class="endereco-container">
+                <div class="endereco-content">
+                    <h3>ENDEREÇO</h3>
+                    <p>Rua Doutor Olinto de Magalhães 54, Vidigal,</p>
+                    <p>Leblon, Rio de Janeiro - RJ, 22450-250</p>
+                </div>
+
+                <div class="endereco-content">
+                    <h3>TELEFONE</h3>
+                    <p>(21) 96427-2230</p>
+                </div>
+
+                <div class="endereco-content">
+                    <h3>SIGA-NOS</h3>
+                    <a href="https://www.facebook.com/mostradeteatronosdomorro/" target="_blank">
+                        <img src="public/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/gruponosdomorrooficial/" target="_blank">
+                        <img src="public/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.451466013976!2d-43.239364289180486!3d-22.994069953238437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd43bcff7ee7d%3A0x41f0665b81752749!2sGrupo%20De%20Teatro%20N%C3%B3s%20Do%20Morro%20-%20Oficial!5e0!3m2!1spt-BR!2sbr!4v1734463219196!5m2!1spt-BR!2sbr" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer class="footer-container">
         <h4>Grupo Nós do Morro 2024 ©</h4>
