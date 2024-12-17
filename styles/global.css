@@ -2,6 +2,7 @@
 @import url('https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light');
 :root {
     --primary-color-white: rgb(255,255,255);
+    --secondary-color-white: #e6e0d4;
     --primary-color-black: rgb(35,31,32);
     --primary-color-orange: rgb(245,130,31);
     --primary-color-brown: rgb(72,39,16);
@@ -38,8 +39,26 @@ body {
     flex-direction: column;
 }
 
+.titulo {
+    border-bottom: 1px solid var(--primary-color-brown);
+    font-size: 30px;
+    width: 70vh;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.titulo h1 {
+    margin-bottom: 1em;
+}
+
 .footer-container {
     font-family: "Avenir Light";
     text-align: center;
     margin: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo {
+        width: 40vh;
+    }
 }
