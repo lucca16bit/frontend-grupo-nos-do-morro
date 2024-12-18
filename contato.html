@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nós do Morro</title>
+    <title>Contato | Grupo Nós do Morro</title>
 
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/component/header.css">
@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="assets/icons/nos-do-morro_logo_fundo-branco.png" type="image/x-icon">
 
     <script src="js/header.js" defer></script>
+    <script src="js/validation.js" defer></script>
 </head>
 <body>
     <header class="header-container" id="header">
@@ -24,7 +25,7 @@
             >
         </div>
 
-        <div class="header-navigation" id="header-navigation">
+        <nav class="header-navigation" id="header-navigation">
             <button onclick="toggleSidebar()" class="header-btn-icon">
                 <img src="public/x-lg.svg" alt="" srcset="">
             </button>
@@ -40,7 +41,7 @@
             <a href="./transparencia.html">
                 TRANSPARÊNCIA
             </a>
-        </div>
+        </nav>
     </header>
     <main tabindex="0" onclick="closeSidebar()" class="main-container" id="content">
 
@@ -50,12 +51,23 @@
 
         <section class="formulario-container">
             <div class="form-content">
-                <form action="https://api.staticforms.xyz/submit" method="post">
+                <form action="https://api.staticforms.xyz/submit" method="post" id="formulario">
                     <input type="text" name="name" placeholder="Nome" autocomplete="off" required>
                     <input type="email" name="email" placeholder="Email" autocomplete="off" required>
-                    <input type="number" name="number" placeholder="Telefone" autocomplete="off" required>
+                    <input type="text" name="phone" placeholder="Telefone" autocomplete="off" required>
                     <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui..." required></textarea>
-                    <button type="submit" class="btn-enviar">Enviar</button> 
+
+                    <div class="form-footer">
+                        <div id="form-message">
+                            <p>Mensagem enviada com sucesso!</p>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
+
+                    <!-- API para envio de formulários -->
+                    <!-- <input type="hidden" name="accessKey" value="00a1eeb6-9b99-4fbe-8ea5-84d6042d72ac"> -->
+                    <input type="hidden" name="accessKey" value="6d087b26-40b7-4946-95b9-bf2e9020d7c7">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/contato.html">
                 </form>
             </div>
             <div  class="endereco-container">
@@ -83,7 +95,7 @@
         </section>
 
         <section class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.451466013976!2d-43.239364289180486!3d-22.994069953238437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd43bcff7ee7d%3A0x41f0665b81752749!2sGrupo%20De%20Teatro%20N%C3%B3s%20Do%20Morro%20-%20Oficial!5e0!3m2!1spt-BR!2sbr!4v1734463219196!5m2!1spt-BR!2sbr" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.451466013976!2d-43.239364289180486!3d-22.994069953238437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd43bcff7ee7d%3A0x41f0665b81752749!2sGrupo%20De%20Teatro%20N%C3%B3s%20Do%20Morro%20-%20Oficial!5e0!3m2!1spt-BR!2sbr!4v1734463219196!5m2!1spt-BR!2sbr" width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer class="footer-container">

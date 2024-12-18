@@ -39,6 +39,25 @@ p, h3 {
     resize: none;
 }
 
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 43vh;
+    margin-top: 1em;
+}
+
+#form-message {
+    visibility: hidden;
+    color: green;
+    font-size: 16px;
+    margin: 0;
+}
+
+#form-message.show {
+    visibility: visible; 
+}
+
 .btn-enviar {
     background-color: var(--secondary-color-white);
     font-family: "Avenir Light";
@@ -46,6 +65,12 @@ p, h3 {
     padding: 0.7em 2.5em;
     cursor: pointer;
     border: none;
+    transition: 0.4s;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(187, 187, 187);
+    cursor: pointer;
 }
 
 input:focus, 
@@ -81,7 +106,7 @@ textarea:focus {
 .map-container {
     margin-top: 4em;
     width: 100%;
-    height: 62vh;
+    height: 560px;
 }
 
 @media screen and (max-width: 768px) {
