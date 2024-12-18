@@ -26,7 +26,7 @@
 
 .transparencia-content {
     background-color: var(--secondary-color-brown);
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -53,9 +53,15 @@
     color: var(--primary-color-white);
 }
 
+#funarte {
+    width: 300px;
+    margin-top: 0.5em;
+}
+
 .transparencia-list-item ul li {
     margin: 1em 3em;
     color: var(--primary-color-white);
+    list-style-type: none;
 }
 
 .termo-content {
