@@ -21,7 +21,7 @@
     background-color: var(--secondary-color-brown);
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    height: 80vh;
 }
 
 .transparencia-content {
@@ -32,7 +32,6 @@
 }
 
 .transparencia-item {
-    padding: 1em;
     margin: 2.5em;
     text-align: center;
 }
@@ -45,6 +44,7 @@
 
 .transparencia-list-item {
     text-align: left;
+    padding-left: 1em;
 }
 
 .transparencia-list-item p {
@@ -59,7 +59,7 @@
 }
 
 .transparencia-list-item ul li {
-    margin: 1em 3em;
+    margin: 1.5em 3em;
     color: var(--primary-color-white);
     list-style-type: none;
     width: 90%;
@@ -94,6 +94,10 @@
 
 
 @media screen and (max-width: 768px) {
+    .transparencia-container {
+        height: 90vh;
+    }
+    
     .article-content {
         width: 80%;
     }
@@ -103,7 +107,7 @@
     }
 
     .transparencia-list-item ul li {
-        margin: 0 0;
+        margin: 1em;
         margin-left: -1.5em;
     }
 
