@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/component/header.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="shortcut icon" href="assets/icons/nos-do-morro_logo_fundo-branco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../public/logo_fundo-branco.png" type="image/x-icon">
 
     <script src="js/header.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 <body>
     <header class="header-container" id="header">
         <button onclick="toggleSidebar()" class="header-btn-icon">
-            <img src="public/list.svg" alt="" srcset="">
+            <img src="../public/list.svg" alt="" srcset="">
         </button>
         <div class="header-logo">
             <img
-                src="assets/icons/nos-do-morro_logo_fundo-branco.png" 
+                src="../public/logo_fundo-branco.png" 
                 alt="LOGO"
             >
         </div>
 
         <nav class="header-navigation" id="header-navigation">
             <button onclick="toggleSidebar()" class="header-btn-icon">
-                <img src="public/x-lg.svg" alt="" srcset="">
+                <img src="../public/x-lg.svg" alt="" srcset="">
             </button>
             <a href="./index.html" class="active">
                 INÍCIO
@@ -43,8 +44,18 @@
         </nav>
     </header>
     <main tabindex="0" onclick="closeSidebar()" class="main-container" id="content">
-        <div class="titulo">
-            <h1>Em Desenvolvimento</h1>
+        <div class="slide-container">
+            <button id="prev-btn">
+                <img src="./assets/icons/arrow-left.svg" alt="Botão anterior">
+            </button>
+            <div class="slide-imagens">
+                <img src="./assets/imgs/Snapinsta.app_460396925_18461318233059295_1668779658325633756_n_1080-transformed.jpeg" alt="" class="slider on">
+                <img src="./assets/imgs/Snapinsta.app_460354021_18461318242059295_8507681570412092311_n_1080-transformed.jpeg" alt="" class="slider">
+                <img src="./assets/imgs/Snapinsta.app_460493724_18461318266059295_8754105812189094801_n_1080 (1).jpg" alt="" class="slider">
+            </div>
+            <button id="next-btn">
+                <img src="./assets/icons/arrow-right.svg" alt="Botão avançar">
+            </button>
         </div>
     </main>
     <footer class="footer-container">
