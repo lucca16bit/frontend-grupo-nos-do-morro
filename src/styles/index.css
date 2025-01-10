@@ -7,6 +7,15 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-family: "Avenir Light";
+}
+
+.main-container {
+    padding-top: 0;
+    height: auto;
+}
+
 .slide-container {
     box-sizing: border-box;
     width: 100%;
@@ -62,6 +71,92 @@ body {
     height: 100%;
 }
 
+.welcome-container {
+    max-width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: var(--tertiary-color-white);
+
+    display: flex;
+}
+
+.image-content {
+    position: relative;
+    width: 90%;
+    height: 450px;
+    margin-top: 4em;
+    margin-left: 4em;
+    overflow: hidden;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-mobile {
+    display: none;
+}
+
+.text-content {
+    background-color: var(--primary-color-white); 
+    position: relative;
+    text-align: left;
+    width: 130vh;
+    height: 300px;
+    margin-top: 8em;
+    margin-left: -25em;
+    margin-right: 4em;
+    padding: 5em;
+    padding-left: 10em;
+}
+
+.text-content h1 {
+    font-size: 3.5em;
+    margin-right: 5em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.text-content .explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color-black);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color-black);
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.explore-btn {
+    font-family: "Avenir Light";
+    margin-top: 2em;
+}
+
+.text-content .explore-btn:hover {
+    color: #555;
+    border-color: #555;
+}
+
+#target-section {
+    background-color: var(--tertiary-color-white); 
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 910px) {
     .slide-container {
         gap: 0.5rem;
@@ -91,6 +186,52 @@ body {
     .slider {
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .welcome-container {
+        width: 100%;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .image-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .text-content {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .text-content h1, p {
+        margin: 0;
+    }
+
+    .text-content h1 {
+        padding: 16px;
+    }
+
+    .text-content p {
+        padding: 1em;
+    }
+
+    .text-content .explore-btn {
+        margin-left: 1em;
     }
 }
 
