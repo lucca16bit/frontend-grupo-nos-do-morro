@@ -11,17 +11,24 @@ p {
     font-family: "Avenir Light";
 }
 
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .main-container {
     padding-top: 0;
     height: auto;
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .slide-container {
-    box-sizing: border-box;
     width: 100%;
     min-width: 100vh;
     gap: 1rem;
-    margin-top: 15em;
 
     display: flex;
     align-items: center;
@@ -75,6 +82,7 @@ p {
     max-width: 100%;
     height: 80vh;
     margin: 0 auto;
+    margin-bottom: 4em;
     background-color: var(--tertiary-color-white);
 
     display: flex;
@@ -130,7 +138,7 @@ p {
     color: var(--primary-color-black);
     font-weight: bold;
     border-bottom: 2px solid var(--primary-color-black);
-    padding: 5px 0;
+    padding: 5px 4em 0 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -142,15 +150,47 @@ p {
 .text-content .explore-btn:hover {
     color: #555;
     border-color: #555;
+    padding: 5px 5em 0 0;
 }
 
-#target-section {
-    background-color: var(--tertiary-color-white); 
-    margin-top: 100px;
-    padding: 50px;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #333;
+.sobre-container {
+    width: 60%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sobre-text-content {
+    font-family: "Avenir Light";
+    text-align: left;
+}
+
+.sobre-text-content h1 {
+    border-left: 4px solid var(--secondary-color-orange);
+    font-size: 40px;
+    font-weight: bolder;
+    
+    padding-left: 10px;
+}
+
+.sobre-text-content p {
+    font-size: 17px;
+    margin: 2em 2em 0 0;
+}
+
+.sobre-text-content a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color-black);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color-black);
+    padding: 5px 4em 0 0;
+    margin: 2em 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sobre-img-content img{
+    width: 600px;
 }
 
 html {
