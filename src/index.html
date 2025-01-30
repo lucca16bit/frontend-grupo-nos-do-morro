@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="shortcut icon" href="../public/logo_fundo-branco.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
+
     <script src="js/header.js" defer></script>
     <script src="js/carousel.js" defer></script>
 </head>
@@ -52,17 +57,67 @@
             <div class="text-content">
                 <h1>Bem-vindo ao Nós do Morro</h1>
                 <p>No coração de Vidigal, há mais de 35 anos, descobrimos talentos, contamos histórias e construímos sonhos. Junte-se a nós nessa jornada de criatividade, paixão e transformação. Seja parte da nossa história e explore um universo de teatro, música e emoção!</p>
-                <a href="#target-section" class="explore-btn">Explorar mais</a>
+                <a href="#target-section" class="button-89" role="button">Explorar mais</a>
             </div>
         </section>
-        <section class="sobre-container" id="target-section">
+
+        <section class="infos-impacto-container" id="target-section">
+            <div class="infos-impacto-grid">
+                <div class="icon-info">
+                    <img src="./assets/svgs/theatre-curtains-svgrepo-com.svg" alt="">
+                </div>
+                <h1>17</h1>
+                <h3>Mostras de teatro realizadas</h3>
+                <p>Levando cultura e arte para diferentes públicos e promovendo talentos da comunidade.</p>
+            </div>
+            <div class="infos-impacto-grid">
+                <div class="icon-info">
+                    <img src="./assets/svgs/theatre-masks-svgrepo-com.svg" alt="">
+                </div>
+                <h1>103</h1>
+                <h3>Peças teatrais encenadas</h3>
+                <p>Proporcionando experiências transformadoras e emocionantes para milhares de espectadores.</p>
+            </div>
+            <div class="infos-impacto-grid">
+                <div class="icon-info">
+                    <img src="./assets/svgs/ticket-svgrepo-com.svg" alt="">
+                </div>
+                <h1>10</h1>
+                <h3>Curtas-metragens produzidos</h3>
+                <p>Contando histórias autênticas e impactantes que alcançaram grandes festivais e audiências.</p>
+            </div>
+        </section>
+        
+
+        <section class="sobre-container">
             <div class="sobre-text-content">
                 <h1>Nós do Morro</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien elit, ornare at neque malesuada, facilisis tempor odio. Vivamus pretium ultrices dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce porta congue leo id tristique. Ut viverra diam mauris, non lacinia ipsum blandit quis. Ut eleifend tincidunt augue ut tristique. Cras eu massa odio. Sed sed dui ac lacus aliquet faucibus sed eget nisl.</p>
-                <a href="sobre.html">Saiba mais</a>
+                <a href="./sobre.html" class="button-89" id="btn-saiba-mais" role="button">Saiba mais</a>
             </div>
             <div class="sobre-img-content">
                 <img src="assets/imgs/foto ricardo gama (81).JPG" alt="">
+            </div>
+        </section>
+
+        <!-- Slider main container -->
+        <section class="slider-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/imgs/1b-apresentacao-plufft-1.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/imgs/1b-apresentacao-plufft-1.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/imgs/1b-apresentacao-plufft-1.JPG" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
 
@@ -188,20 +243,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="slide-container">
-            <button id="prev-btn">
-                <img src="./assets/svgs/arrow-left.svg" alt="Botão anterior">
-            </button>
-            <div class="slide-imagens">
-                <img src="./assets/imgs/Snapinsta.app_460396925_18461318233059295_1668779658325633756_n_1080-transformed.jpeg" alt="" class="slider on">
-                <img src="./assets/imgs/Snapinsta.app_460354021_18461318242059295_8507681570412092311_n_1080-transformed.jpeg" alt="" class="slider">
-                <img src="./assets/imgs/Snapinsta.app_460493724_18461318266059295_8754105812189094801_n_1080 (1).jpg" alt="" class="slider">
-            </div>
-            <button id="next-btn">
-                <img src="./assets/svgs/arrow-right.svg" alt="Botão avançar">
-            </button>
-        </section> -->
+        
     </main>
     <footer class="footer-container">
         <h4>Grupo Nós do Morro 2024 ©</h4>
