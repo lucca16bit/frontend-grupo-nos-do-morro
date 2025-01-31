@@ -26,18 +26,18 @@ section {
     flex-direction: column;
 }
 
-.swiper {
+.swiper-1 {
     width: 90%;
     height: 750px;
 }
 
-.swiper-slide {
+.swiper-1 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.swiper-slide img {
+.swiper-1 .swiper-slide img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -231,9 +231,8 @@ section {
 
 .impacto-container {
     width: 100%;
-    background-color: rgb(236, 236, 236);
     padding: 3em 0;
-    text-align: center;
+    overflow: hidden;
 }
 
 .impacto-header h1 {
@@ -257,115 +256,72 @@ section {
     margin-bottom: 2em;
 }
 
-.impacto-content {
-    gap: 1.5em;
-    width: 80%;
+.swiper-2 {
+    width: 90%;
     margin: 0 auto;
+    margin-top: 6em;
+    padding: 20px 0;
+}
+
+.swiper-2 .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-2 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 25px;
+    height: 25px;
+}
+
+.swiper-button-prev::after {
+    content: '';
     
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.impacto-box {
-    background-color: var(--primary-color-white);
-    padding: 1.5em;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.swiper-button-next::after {
+    content: '';
+    
 }
 
-.impacto-box h3 {
+.swiper-button-prev {
+    left: 3px;
+}
+
+.swiper-button-next {
+    right: 3px;
+}
+
+.scroll-item {
+    width: 350px;
+    text-align: left;
     font-family: "Avenir Light";
+    transition: transform 0.3s ease;
 }
 
-.impacto-box:hover {
+.scroll-item h3 {
+    font-size: 30px;
+}
+
+.scroll-item p {
+    font-size: 17px;
+    color: #666666d7;
+    margin-right: 2em;
+}
+
+.scroll-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .icon img {
-    width: 70px;
-}
-
-.impacto-box h3 {
-    font-size: 2em;
-    color: #333;
-    margin: 0.3em 0;
-}
-
-.impacto-box p {
-    font-size: 1em;
-    color: #666;
-}
-
-.impacto-content-text {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.impacto-content-text h1 {
-    font-size: 2.2em;
-    margin-top: 1.2em;
-}
-
-.impacto-content-text p {
-    font-size: 1.1em;
-    margin-top: 1.5em;
-    color: var(--secondary-color-black);
-}
-
-.impacto-content-grid {
-    width: 90%;
-    margin: 2.5em auto 0;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5em;
-}
-
-.impacto-box-grid {
-    background-color: var(--primary-color-white);
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.impacto-box-grid:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.icon-grid {
-    flex-shrink: 0;
-}
-
-.icon-grid img {
-    width: 120px;
-}
-
-.text-grid {
-    flex-grow: 1;
-    text-align: left;
-}
-
-.text-grid h1 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-.text-grid h1, p {
-    font-family: "Avenir Light";
-}
-
-.text-grid p { 
-    font-size: 1.2em;
-    color: #666;
-    line-height: 1.5;
+    width: 60px;
+    margin-bottom: 10px;
 }
 
 /* GALERIA */
