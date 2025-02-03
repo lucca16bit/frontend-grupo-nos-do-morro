@@ -36,9 +36,9 @@ const swiper2 = new Swiper('.swiper-2', {
   freeMode: true,
   grabCursor: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-},
+    nextEl: ".custom-next-button",
+    prevEl: ".custom-prev-button",
+  },
   breakpoints: {
     640: { 
         slidesPerView: 1, 

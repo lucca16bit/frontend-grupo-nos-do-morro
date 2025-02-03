@@ -257,13 +257,13 @@ section {
 }
 
 .swiper-2 {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 6em;
-    padding: 20px 0;
 }
 
 .swiper-2 .swiper-wrapper {
+    width: 88%;
     display: flex;
     align-items: center;
 }
@@ -274,32 +274,38 @@ section {
     align-items: center;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    width: 25px;
-    height: 25px;
-}
-
-.swiper-button-prev::after {
-    content: '';
-    
-}
-
+.swiper-button-prev::after,
 .swiper-button-next::after {
-    content: '';
-    
+    content: "";
+    display: none;
 }
 
-.swiper-button-prev {
-    left: 3px;
+.custom-prev-button,
+.custom-next-button {
+    padding: 5px 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.swiper-button-next {
-    right: 3px;
+.custom-prev-button img, 
+.custom-next-button img {
+    width: 25px;
+    transition: all 0.3s ease;
+}
+
+.custom-prev-button:hover,
+.custom-next-button:hover {
+    background-color: var(--primary-color-orange);
+}
+
+.custom-prev-button:hover img,
+.custom-next-button:hover img {
+    filter: brightness(0) invert(1); 
 }
 
 .scroll-item {
-    width: 350px;
+    width: 200px;
     text-align: left;
     font-family: "Avenir Light";
     transition: transform 0.3s ease;
@@ -312,7 +318,7 @@ section {
 .scroll-item p {
     font-size: 17px;
     color: #666666d7;
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 .scroll-item:hover {
@@ -470,6 +476,14 @@ html {
 
     #btn-saiba-mais {
         margin: 0;
+    }
+
+    .swiper-2 {
+        width: 100%;
+    }
+
+    .swiper-2 .swiper-wrapper {
+        width: 80%;
     }
 }
 
