@@ -31,26 +31,34 @@ const swiper = new Swiper('.swiper-1', {
 });
 
 const swiper2 = new Swiper('.swiper-2', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  freeMode: true,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".custom-next-button",
-    prevEl: ".custom-prev-button",
-  },
-  breakpoints: {
-    640: { 
-        slidesPerView: 1, 
-        spaceBetween: 10 
+    loop: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
     },
-    768: { 
-        slidesPerView: 3, 
-        spaceBetween: 20 
+    navigation: {
+        nextEl: ".custom-next-button",
+        prevEl: ".custom-prev-button",
     },
-    1024: { 
-        slidesPerView: 4, 
-        spaceBetween: 30 
+    breakpoints: {
+        640: { 
+            slidesPerView: 1, 
+            spaceBetween: 10 
+        },
+        768: { 
+            slidesPerView: 2, 
+            spaceBetween: 20 
+        },
+        1024: { 
+            slidesPerView: 3, 
+            spaceBetween: 30 
+        },
+        1600: {
+            slidesPerView: 4, 
+            spaceBetween: 30 
+        }
+
     }
-  }
 });
