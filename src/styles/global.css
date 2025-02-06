@@ -43,11 +43,9 @@ body {
 }
 
 .titulo {
-    border-bottom: 1px solid var(--primary-color-brown);
     font-size: 30px;
     width: 70vh;
     margin: 0 auto;
-    margin-bottom: 3em;
 }
 
 .titulo h1 {

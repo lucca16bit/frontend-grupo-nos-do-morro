@@ -2,6 +2,43 @@ p, h3 {
     font-family: "Avenir Light";
 }
 
+p {
+    font-size: 17px;
+    color: #666666d7;
+}
+
+.inicio {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.inicio p {
+    margin-top: 1em;
+}
+
+.divisor {
+    width: 100%;
+    gap: 1em;
+    margin: 2em auto;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisor-border {
+    width: 35%; 
+    height: 2px;
+    background-color: #aaaaaa69;
+}
+
+.divisor-img img {
+    width: 35px;
+    height: auto;
+}
+
 .formulario-container {
     width: 80%;
     margin: 0 auto;
