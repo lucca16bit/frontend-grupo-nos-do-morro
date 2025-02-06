@@ -50,9 +50,8 @@ section {
 
 .welcome-container {
     max-width: 100%;
-    height: 85vh;
+    height: 70vh;
     margin: 0 auto;
-    margin-bottom: 2em;
     background-color: var(--primary-color-white);
 
     display: flex;
@@ -152,11 +151,34 @@ section {
     color: #fff;
 }
 
+.divisor {
+    width: 100%;
+    gap: 1em;
+    margin: 2em auto;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisor-border {
+    width: 35%; 
+    height: 2px;
+    background-color: #aaaaaa69;
+}
+
+.divisor-img img {
+    width: 35px;
+    height: auto;
+}
+
 /* GRID INICIAL */
 
 .infos-impacto-container {
     width: 90%;
     gap: 2em;
+    margin-top: 3em;
     margin-bottom: 6em;
 
     display: flex;
@@ -194,17 +216,22 @@ section {
     margin-right: 2em;
 }
 
+/* SOBRE */
+
 .sobre-container {
     width: 60%;
     margin-bottom: 2em;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
 }
 
 .sobre-text-content {
     font-family: "Avenir Light";
     text-align: left;
+    flex: 1;
 }
 
 .sobre-text-content h1 {
@@ -223,8 +250,15 @@ section {
     --color: rgb(29, 29, 29);
 }
 
-.sobre-img-content img{
-    width: 100%;
+.sobre-img-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-img-content img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* IMPACTO */
@@ -435,6 +469,8 @@ html {
 
 @media (max-width: 600px) {
     .infos-impacto-container {
+        width: 100%;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -492,20 +528,17 @@ html {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
     .sobre-container {
         width: 100%;
 
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
     }
     
     .sobre-text-content {
         margin: 1em;
     }
-}
 
-@media screen and (max-width: 1170px) {
     .welcome-container {
         width: 100%;
         flex-direction: column;
