@@ -21,7 +21,7 @@
     background-color: var(--secondary-color-brown);
     display: grid;
     place-items: center;
-    height: 80vh;
+    height: auto;
 }
 
 .transparencia-content {
@@ -92,10 +92,41 @@
     color: var(--primary-color-white);
 }
 
+.pdf-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 1em;
+}
+
+.pdf-buttons a {
+    font-family: "Avenir Light";
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.visualizar {
+    background-color: var(--primary-color-orange);
+    color: white;
+}
+
+.baixar {
+    background-color: var(--primary-color-white);
+    color: black;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
 
 @media screen and (max-width: 768px) {
     .transparencia-container {
-        height: 90vh;
+        height: auto;
     }
     
     .article-content {
