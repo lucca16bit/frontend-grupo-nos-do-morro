@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="styles/component/header.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="shortcut icon" href="../public/logo_fundo-branco.png" type="image/x-icon">
-
+    <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="./js/swiper.js" defer></script>
 
     <script src="js/header.js" defer></script>
     <script src="js/carousel.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <!-- SWIPER API -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
 </head>
 <body>
     <header class="header-container" id="header">
@@ -213,39 +214,72 @@
             <div class="divisor-border"></div>
         </section>
 
-        <section class="galeria-container">
+        <section class="galeria">
             <h1>Galeria</h1>
-            <div class="galeria-content">
-                <div class="galeria-img">
-                    <img src="assets/imgs/1b-apresentacao-plufft-2.JPG" alt="">
-                    <div class="overlay">
-                        <h3>Sou o título da imagem</h3>
-                        <p>Sou a descrição :D</p>
-                    </div>
+            <div class="galeria-container">
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-e-proibido-brincar.jpg" alt="Foto galeria 1">
                 </div>
-                <div class="galeria-img">
-                    <img src="assets/imgs/1b-apresentacao-plufft-2.JPG" alt="">
-                    <div class="overlay">
-                        <h3>Sou o título da imagem</h3>
-                        <p>Sou a descrição :D</p>
-                    </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-2.jpg" alt="Foto galeria 2">
                 </div>
-                <div class="galeria-img">
-                    <img src="assets/imgs/1b-apresentacao-plufft-2.JPG" alt="">
-                    <div class="overlay">
-                        <h3>Sou o título da imagem</h3>
-                        <p>Sou a descrição :D</p>
-                    </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-3.jpg" alt="Foto galeria 3">
                 </div>
-                <div class="galeria-img">
-                    <img src="assets/imgs/1b-apresentacao-plufft-2.JPG" alt="">
-                    <div class="overlay">
-                        <h3>Sou o título da imagem</h3>
-                        <p>Sou a descrição :D</p>
-                    </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-4.jpg" alt="Foto galeria 4">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-5.jpg" alt="Foto galeria 5">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-6.jpeg" alt="Foto galeria 6">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-9.jpg" alt="Foto galeria 7">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-apresentacao-1.jpg" alt="Foto galeria 8">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-apresentacao-2.jpg" alt="Foto galeria 9">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-apresentacao-3.jpg" alt="Foto galeria 10">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-apresentacao-4.jpg" alt="Foto galeria 11">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/exposicao-25anos.jpg" alt="Foto galeria 12">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-pequenos-burgueses.jpg" alt="Foto galeria 13">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-ricardo-gama-1.jpg" alt="Foto galeria 14">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-ricardo-gama-3.jpg" alt="Foto galeria 15">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-ricardo-gama-4.jpg" alt="Foto galeria 16">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-machado-3x4.jpg" alt="Foto galeria 17">
+                </div>
+                <div class="galeria-item">
+                    <img src="./assets/imgs/foto-sherminha.jpg" alt="Foto galeria 18">
                 </div>
             </div>
         </section>
+    
+        <div class="modal">
+            <div class="modal-content">
+                <button class="close-button">X</button>
+                <img src="" alt="Imagem modal">
+            </div>
+        </div>
         
     </main>
     <footer class="footer-container">
