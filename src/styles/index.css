@@ -49,60 +49,49 @@ section {
 }
 
 .welcome-container {
-    max-width: 100%;
-    height: 70vh;
+    max-width: 80%;
+    height: auto;
     margin: 0 auto;
+    margin-bottom: 4em;
     background-color: var(--primary-color-white);
 
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
 }
 
 .image-content {
     position: relative;
-    width: 90%;
+    width: 80vh;
     height: 450px;
-    margin-top: 4em;
-    margin-left: 4em;
-    overflow: hidden;
 }
 
 .image-content img {
-    width: 100%;
+    width: 600px;
     height: auto;
 }
 
-.banner-mobile {
-    display: none;
-}
-
 .text-content {
-    background-color: var(--primary-color-orange);
-    position: relative;
+    margin-top: 5em;
     text-align: left;
-    width: 130vh;
-    height: 350px;
-    margin-top: 8em;
-    margin-left: -25em;
-    margin-right: 4em;
-    padding: 5em;
-    padding-left: 10em;
+    width: 700px;
 }
 
 .text-content h1 {
-    font-size: 3.5em;
-    margin-right: 5em;
+    font-size: 45px;
+    font-family: "Avenir Light";
     margin-bottom: 0.5em;
-    text-align: left;
-    color: white;
+}
+
+.text-content strong {
+    color: var(--primary-color-orange);
 }
 
 .text-content p {
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: left;
-    color: white;
-    font-weight: bolder;
+    font-size: 17px;
     margin-bottom: 2em;
+    color: var(--secondary-color-black);
 }
 
 .text-content .explore-btn {
@@ -120,7 +109,7 @@ section {
     text-decoration: none;
     --b: 3px;   
     --s: .45em;
-    --color: #ffffff;
+    --color: #000000;
     
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
@@ -212,7 +201,7 @@ section {
 
 .infos-impacto-grid p {
     font-size: 17px;
-    color: #666666d7;
+    color: var(--primary-color-gray);
     margin-right: 2em;
 }
 
@@ -270,6 +259,8 @@ section {
 }
 
 .impacto-header h1 {
+    
+    font-family: "Avenir Light";
     font-size: 3.5em;
     position: relative;
     margin-bottom: 15px;
@@ -286,7 +277,7 @@ section {
 
 .impacto-header p {
     font-size: 1.2em;
-    color: var(--secondary-color-black);
+    color: var(--primary-color-gray);
     margin-bottom: 2em;
 }
 
@@ -355,7 +346,7 @@ section {
 
 .scroll-item p {
     font-size: 17px;
-    color: #666666d7;
+    color: var(--primary-color-gray);
     margin-right: 1em;
     margin-top: 5px;
 }
@@ -550,22 +541,18 @@ html {
     .welcome-container {
         width: 100%;
         flex-direction: column;
-        height: 800px;
+        height: auto;
     }
 
     .image-content {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
     }
 
-    .banner-desktop {
-        display: none;
-    }
-
-    .banner-mobile {
-        display: block;
-        width: 100%;
+    .image-content img {
+        max-width: 100%;
     }
 
     .text-content {
@@ -573,6 +560,7 @@ html {
         height: 100%;
         margin: 0 auto;
         padding: 0;
+        text-align: center;
     }
 
     .text-content h1, p {
