@@ -3,21 +3,42 @@
     font-size: 18px;
     font-style: normal;
     text-align: left;
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
 }
 
 .article-content p {
     margin: 2em 0;
+    font-size: 17px;
+    margin-bottom: 2em;
+    color: var(--secondary-color-black);
 }
 
-#tranparencia-titulo {
-    font-size: 30px;
+.divisor {
+    width: 100%;
+    gap: 1em;
     margin: 2em auto;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisor-border {
+    width: 35%; 
+    height: 2px;
+    background-color: #aaaaaa69;
+}
+
+.divisor-img img {
+    width: 35px;
+    height: auto;
 }
 
 .transparencia-container {
     width: 100%;
+    margin: 2em auto;
     background-color: var(--secondary-color-brown);
     display: grid;
     place-items: center;
@@ -126,6 +147,7 @@
 
 @media screen and (max-width: 768px) {
     .transparencia-container {
+        padding-top: 2em;
         height: auto;
     }
     

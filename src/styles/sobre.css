@@ -1,14 +1,40 @@
+
+.divisor {
+    width: 100%;
+    gap: 1em;
+    margin: 2em auto;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisor-border {
+    width: 35%; 
+    height: 2px;
+    background-color: #aaaaaa69;
+}
+
+.divisor-img img {
+    width: 35px;
+    height: auto;
+}
+
 .article-content {
     font-family: "Avenir Light";
     font-size: 18px;
     font-style: normal;
     text-align: left;
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
 }
 
 .article-content p {
     margin: 2em 0;
+    font-size: 17px;
+    margin-bottom: 2em;
+    color: var(--secondary-color-black);
 }
 
 .sobre-imagens-container {
@@ -20,15 +46,26 @@
 
 .sobre-imagens-container div {
     width: 100%; 
-    height: 500px; 
+    height: 470px; 
+}
+
+.sobre-imagens-content {
+    width: 100%;
+    height: 500px;
 }
 
 .sobre-imagens-content img {
     width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    display: block; 
+    height: auto;
+    object-fit: cover;
 }
+
+#foto-diretoria {
+    width: 100%; 
+    height: 470px;
+    object-fit: cover;
+}
+
 
 .sobre-apresentacao-content {
     background-color: var(--secondary-color-brown);
@@ -44,9 +81,15 @@
     margin-top: 1em;
 }
 
-.sobre-apresentacao-content p {
-    font-size:30px;
+.sobre-apresentacao-content h3 {
     margin-left: 3em;
+    margin-bottom: 2em;
+}
+
+.sobre-apresentacao-content p {
+    font-size: 30px;
+    width: 400px;
+    margin-left: 3em; 
 }
 
 .sobre-apresentacao-content hr {
@@ -67,6 +110,8 @@
 }
 
 #diretoria p {
+    width: 80%;
+    text-align: right;
     margin-right: 3em;
 }
 
@@ -84,17 +129,54 @@
         width: 80%;
     }
 
-    .sobre-imagens-container {
-        grid-template-columns: 1fr;
-        
-    }
-
-    .sobre-apresentacao-content, .sobre-imagens-content {
-        height: auto;
-    }
-
     #versao-mobile {
-        display: grid;
+        display: block;
+    }
+
+    .sobre-imagens-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sobre-apresentacao-content {
+        padding-top: 2em;
+    }
+
+    .sobre-apresentacao-content hr {
+        margin-left: 3em;
+    }
+
+    .sobre-apresentacao-content h1 {
+        text-align: left;
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .sobre-apresentacao-content p {
+        font-size: 27px;
+        width: 85%;
+        margin: 0 auto;
+        margin-left: 1.7em;
+    }
+
+    .sobre-imagens-content img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #diretoria h1 {
+        margin-right: 1.2em;
+        text-align: right;
+    }
+
+    #diretoria p {
+        text-align: right;
+    }
+
+    #diretoria hr {
+        margin-right: 4em;
     }
 
     #versao-desktop {
