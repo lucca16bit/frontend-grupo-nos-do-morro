@@ -12,7 +12,8 @@ header {
     width: 55px;
 }
 
-.header-container, .header-navigation {
+.header-container,
+.header-navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,7 +35,7 @@ header {
 }
 
 .header-container a {
-    font-family: "EB Garamond", serif;
+    font-family: 'EB Garamond', serif;
     color: var(--primary-color-brown);
     text-decoration: none;
     transition: 1s;
@@ -64,7 +65,7 @@ header {
 }
 
 .header-navigation a.active {
-    color: var(--primary-color-orange); 
+    color: var(--primary-color-orange);
 }
 
 @media screen and (max-width: 768px) {
@@ -95,7 +96,11 @@ header {
     }
 
     @keyframes showSidebar {
-        from {margin-left: -100vw;}
-        to {margin-left: -5vw;}
+        from {
+            margin-left: -100vw;
+        }
+        to {
+            margin-left: -5vw;
+        }
     }
 }

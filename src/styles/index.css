@@ -8,7 +8,7 @@ body {
 }
 
 p {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
 }
 
 section {
@@ -42,7 +42,6 @@ section {
     height: auto;
     object-fit: cover;
 }
-
 
 .on {
     opacity: 1;
@@ -80,7 +79,7 @@ section {
 
 .text-content h1 {
     font-size: 45px;
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     margin-bottom: 0.5em;
 }
 
@@ -90,6 +89,7 @@ section {
 
 .text-content p {
     font-size: 17px;
+    font-weight: 600;
     margin-bottom: 2em;
     color: var(--secondary-color-black);
 }
@@ -105,23 +105,30 @@ section {
 }
 
 .button-89 {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     text-decoration: none;
-    --b: 3px;   
-    --s: .45em;
+    --b: 3px;
+    --s: 0.45em;
     --color: #000000;
-    
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+
+    padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
     color: var(--color);
     --_p: var(--s);
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
+    background: conic-gradient(
+            from 90deg at var(--b) var(--b),
+            #0000 90deg,
+            var(--color) 0
+        )
+        var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+        calc(100% - var(--b) - 2 * var(--_p));
+    transition:
+        0.3s linear,
+        color 0s,
+        background-color 0s;
     outline: var(--b) solid #0000;
-    outline-offset: .6em;
+    outline-offset: 0.6em;
     font-size: 16px;
-  
+
     border: 0;
     user-select: none;
     -webkit-user-select: none;
@@ -129,10 +136,10 @@ section {
 }
 
 .button-89:hover,
-.button-89:focus-visible{
+.button-89:focus-visible {
     --_p: 0px;
     outline-color: var(--color);
-    outline-offset: .05em;
+    outline-offset: 0.05em;
 }
 
 .button-89:active {
@@ -152,7 +159,7 @@ section {
 }
 
 .divisor-border {
-    width: 35%; 
+    width: 35%;
     height: 2px;
     background-color: #aaaaaa69;
 }
@@ -178,7 +185,7 @@ section {
     width: 350px;
     height: 270px;
     text-align: left;
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     border-right: 2px solid #aaaaaa69;
 }
 
@@ -218,7 +225,7 @@ section {
 }
 
 .sobre-text-content {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     text-align: left;
     flex: 1;
 }
@@ -259,15 +266,14 @@ section {
 }
 
 .impacto-header h1 {
-    
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     font-size: 3.5em;
     position: relative;
     margin-bottom: 15px;
 }
 
 .impacto-header h1::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -301,7 +307,7 @@ section {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    content: "";
+    content: '';
     display: none;
 }
 
@@ -312,10 +318,10 @@ section {
     cursor: pointer;
     transition: all 0.3s ease;
     user-select: none;
-   -webkit-user-select: none;
+    -webkit-user-select: none;
 }
 
-.custom-prev-button img, 
+.custom-prev-button img,
 .custom-next-button img {
     width: 25px;
     transition: all 0.3s ease;
@@ -328,14 +334,14 @@ section {
 
 .custom-prev-button:hover img,
 .custom-next-button:hover img {
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
 }
 
 .scroll-item {
     width: 500px;
     height: 220px;
     text-align: left;
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     transition: transform 0.3s ease;
 }
 
@@ -359,7 +365,7 @@ section {
 /* GALERIA */
 
 .galeria h1 {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     font-size: 3.5em;
     margin-bottom: 1em;
     color: #333;
@@ -367,7 +373,7 @@ section {
 }
 
 .galeria h1::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -429,7 +435,9 @@ section {
     font-size: 1.2rem;
     z-index: 1;
     opacity: 0;
-    transition: opacity 600ms, transform 600ms;
+    transition:
+        opacity 600ms,
+        transform 600ms;
 }
 
 .galeria-container a:is(:hover, :focus) figure::after {
@@ -468,7 +476,9 @@ html {
     .galeria-container a:is(:hover, :focus) figcaption {
         opacity: 1;
         transform: translate3d(0, 0, 0);
-        transition: opacity 600ms 400ms, transform 600ms 400ms;
+        transition:
+            opacity 600ms 400ms,
+            transform 600ms 400ms;
     }
 
     .galeria-container a:is(:hover, :focus) img {
@@ -500,7 +510,8 @@ html {
         font-size: 1em;
     }
 
-    .icon img, .icon-grid img {
+    .icon img,
+    .icon-grid img {
         width: 60px;
     }
 
@@ -512,7 +523,7 @@ html {
         font-size: 1.2em;
     }
 
-    .sobre-img-content img{
+    .sobre-img-content img {
         margin-top: 1em;
     }
 
@@ -527,7 +538,7 @@ html {
     .swiper-2 .swiper-wrapper {
         width: 80%;
     }
-    
+
     .scroll-item {
         margin: 0 auto;
         width: 70%;
@@ -552,7 +563,7 @@ html {
 
         flex-direction: column;
     }
-    
+
     .sobre-text-content {
         margin: 1em;
     }
@@ -582,9 +593,9 @@ html {
         text-align: center;
     }
 
-    .text-content h1, p {
+    .text-content h1,
+    p {
         margin: 0;
-        
     }
 
     .text-content h1 {
@@ -600,4 +611,3 @@ html {
         margin-left: 1em;
     }
 }
-

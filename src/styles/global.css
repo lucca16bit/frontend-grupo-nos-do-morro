@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light');
 :root {
-    --primary-color-white: rgb(255,255,255);
+    --primary-color-white: rgb(255, 255, 255);
     --secondary-color-white: #e6e0d4;
     --tertiary-color-white: #f3ead5;
-    --primary-color-black: rgb(35,31,32);
+    --primary-color-black: rgb(35, 31, 32);
     --secondary-color-black: #6b6969;
-    --primary-color-orange: rgb(245,130,31);
+    --primary-color-orange: rgb(245, 130, 31);
     --secondary-color-orange: rgb(247, 204, 166);
-    --primary-color-brown: rgb(72,39,16);
+    --primary-color-brown: rgb(72, 39, 16);
     --secondary-color-brown: #18110f;
     --primary-color-gray: #666666d7;
 }
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: "Cormorant Garamond", serif;
+    font-family: 'Cormorant Garamond', sans-serif;
     font-style: normal;
     background-color: var(--primary-color-white);
     height: 100%;
@@ -54,7 +54,7 @@ body {
 }
 
 .footer-container {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     text-align: center;
     margin: 2em;
 }

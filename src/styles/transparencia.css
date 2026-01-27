@@ -1,5 +1,5 @@
 .article-content {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     font-size: 18px;
     font-style: normal;
     text-align: left;
@@ -9,6 +9,7 @@
 
 .article-content p {
     margin: 2em 0;
+    font-weight: 600;
     font-size: 17px;
     margin-bottom: 2em;
     color: var(--secondary-color-black);
@@ -26,7 +27,7 @@
 }
 
 .divisor-border {
-    width: 35%; 
+    width: 35%;
     height: 2px;
     background-color: #aaaaaa69;
 }
@@ -69,7 +70,7 @@
 }
 
 .transparencia-list-item p {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     font-size: 18px;
     color: var(--primary-color-white);
 }
@@ -103,7 +104,7 @@
 }
 
 .termo-list-item p {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
     font-size: 18px;
     color: var(--primary-color-white);
 }
@@ -120,7 +121,7 @@
 }
 
 .pdf-buttons a {
-    font-family: "Avenir Light";
+    font-family: 'Avenir Light';
 }
 
 .btn {
@@ -150,7 +151,7 @@
         padding-top: 2em;
         height: auto;
     }
-    
+
     .article-content {
         width: 80%;
     }
@@ -168,7 +169,7 @@
         margin-left: -1.5em;
     }
 
-    .termo-list-item {  
+    .termo-list-item {
         margin-left: 1em;
     }
 
@@ -190,7 +191,7 @@
     }
 }
 
-@media screen and (min-width: 1660px){
+@media screen and (min-width: 1660px) {
     .transparencia-content {
         width: 70%;
     }

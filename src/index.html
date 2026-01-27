@@ -1,391 +1,530 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Nós do Morro</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grupo Nós do Morro</title>
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/component/header.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="shortcut icon" href="../public/logo_fundo-branco.png" type="image/x-icon">
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/component/header.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link
+            rel="shortcut icon"
+            href="../public/logo_fundo-branco.png"
+            type="image/x-icon"
+        />
+        <!-- SWIPER CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 
-    <script src="js/header.js" defer></script>
-    <script src="js/carousel.js" defer></script>
-    <!-- SWIPER API -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="./js/swiper.js" defer></script>
-</head>
-<body>
-    <header class="header-container" id="header">
-        <button onclick="toggleSidebar()" class="header-btn-icon">
-            <img src="../public/list.svg" alt="" srcset="">
-        </button>
-        <div class="header-logo">
-            <img
-                src="../public/logo_fundo-branco.png" 
-                alt="LOGO"
-            >
-        </div>
-
-        <nav class="header-navigation" id="header-navigation">
+        <script src="js/header.js" defer></script>
+        <script src="js/carousel.js" defer></script>
+        <!-- SWIPER API -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+            defer
+        ></script>
+        <script src="./js/swiper.js" defer></script>
+    </head>
+    <body>
+        <header class="header-container" id="header">
             <button onclick="toggleSidebar()" class="header-btn-icon">
-                <img src="../public/x-lg.svg" alt="" srcset="">
+                <img src="../public/list.svg" alt="" srcset="" />
             </button>
-            <a href="./index.html" class="active">
-                INÍCIO
-            </a>
-            <a href="./contato.html">
-                CONTATO
-            </a>
-            <a href="./sobre.html">
-                SOBRE NÓS
-            </a>
-            <a href="./transparencia.html">
-                TRANSPARÊNCIA
-            </a>
-        </nav>
-    </header>
-    <main tabindex="0" onclick="closeSidebar()" class="main-container" id="content">
-        <section class="welcome-container">
-            <div class="image-content">
-                <img src="assets/imgs/banner-forma.png" alt="" class="banner-desktop">
+            <div class="header-logo">
+                <img src="../public/logo_fundo-branco.png" alt="LOGO" />
             </div>
-            <div class="text-content">
-                <h1>Transformamos sonhos em <strong>realidade</strong>.</h1>
-                <p>No coração do Vidigal, há mais de 35 anos, damos voz a talentos, contamos histórias inesquecíveis e construímos futuros brilhantes. Venha fazer parte dessa jornada de arte, cultura e transformação!</p>
-                <a href="#target-section" class="button-89" role="button">Explorar mais</a>
-            </div>
-        </section>
-        
-        <div id="target-section"></div>
 
-        <section class="divisor">
-            <div class="divisor-border"></div>
-            <div class="divisor-img">
-                <img src="../public/logo-small_fundo-branco.PNG" alt="Logo Nós do Morro">
-            </div>
-            <div class="divisor-border"></div>
-        </section>
-
-        <section class="infos-impacto-container">
-            <div class="infos-impacto-grid">
-                <div class="icon-info">
-                    <img src="./assets/svgs/theatre-curtains-svgrepo-com.svg" alt="Logo cortina de teatro">
+            <nav class="header-navigation" id="header-navigation">
+                <button onclick="toggleSidebar()" class="header-btn-icon">
+                    <img src="../public/x-lg.svg" alt="" srcset="" />
+                </button>
+                <a href="./index.html" class="active"> INÍCIO </a>
+                <a href="./contato.html"> CONTATO </a>
+                <a href="./sobre.html"> SOBRE NÓS </a>
+                <a href="./publicacoes.html"> COMUNICADOS </a>
+                <a href="./transparencia.html"> TRANSPARÊNCIA </a>
+            </nav>
+        </header>
+        <main
+            tabindex="0"
+            onclick="closeSidebar()"
+            class="main-container"
+            id="content"
+        >
+            <section class="welcome-container">
+                <div class="image-content">
+                    <img
+                        src="assets/imgs/banner-forma.png"
+                        alt=""
+                        class="banner-desktop"
+                    />
                 </div>
-                <h1>17</h1>
-                <h3>Mostras de teatro realizadas</h3>
-                <p>Levando cultura e arte para diferentes públicos e promovendo talentos da comunidade.</p>
-            </div>
-            <div class="infos-impacto-grid">
-                <div class="icon-info">
-                    <img src="./assets/svgs/theatre-masks-svgrepo-com.svg" alt="Logo máscaras teatrais">
+                <div class="text-content">
+                    <h1>Transformamos sonhos em <strong>realidade</strong>.</h1>
+                    <p>
+                        No coração do Vidigal, há mais de 35 anos, damos voz a
+                        talentos, contamos histórias inesquecíveis e construímos
+                        futuros brilhantes. Venha fazer parte dessa jornada de
+                        arte, cultura e transformação!
+                    </p>
+                    <a href="#target-section" class="button-89" role="button"
+                        >Explorar mais</a
+                    >
                 </div>
-                <h1>103</h1>
-                <h3>Peças teatrais encenadas</h3>
-                <p>Proporcionando experiências transformadoras e emocionantes para milhares de espectadores.</p>
-            </div>
-            <div class="infos-impacto-grid">
-                <div class="icon-info">
-                    <img src="./assets/svgs/ticket-svgrepo-com.svg" alt="Logo ticket">
+            </section>
+
+            <div id="target-section"></div>
+
+            <section class="divisor">
+                <div class="divisor-border"></div>
+                <div class="divisor-img">
+                    <img
+                        src="../public/logo-small_fundo-branco.PNG"
+                        alt="Logo Nós do Morro"
+                    />
                 </div>
-                <h1>10</h1>
-                <h3>Curtas-metragens produzidos</h3>
-                <p>Contando histórias autênticas e impactantes que alcançaram grandes festivais e audiências.</p>
-            </div>
-        </section>
+                <div class="divisor-border"></div>
+            </section>
 
-        <section class="sobre-container">
-            <div class="sobre-text-content">
-                <h1>Nós do Morro</h1>
-                <p>No coração do Vidigal, o Grupo Nós do Morro transforma vidas através da arte há mais de 35 anos. Com projetos de teatro, cinema e cultura, já revelamos talentos, inspiramos gerações e promovemos oportunidades para a comunidade. Nossa missão é tornar a arte acessível a todos, incentivando educação, inclusão e expressão artística.</p>
-                <a href="./sobre.html" class="button-89" id="btn-saiba-mais" role="button">Saiba mais</a>
-            </div>
-            <div class="sobre-img-content">
-                <img src="assets/imgs/foto-8.jpg" alt="">
-            </div>
-        </section>
-
-        <!-- Slider main container
-        <section class="slider-container">
-            <div class="swiper swiper-1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/imgs/1b-apresentacao-plufft-1.JPG" alt="">
+            <section class="infos-impacto-container">
+                <div class="infos-impacto-grid">
+                    <div class="icon-info">
+                        <img
+                            src="./assets/svgs/theatre-curtains-svgrepo-com.svg"
+                            alt="Logo cortina de teatro"
+                        />
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/imgs/1b-apresentacao-plufft-1.JPG" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/imgs/1b-apresentacao-plufft-1.JPG" alt="">
-                    </div>
+                    <h1>17</h1>
+                    <h3>Mostras de teatro realizadas</h3>
+                    <p>
+                        Levando cultura e arte para diferentes públicos e
+                        promovendo talentos da comunidade.
+                    </p>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </section> -->
+                <div class="infos-impacto-grid">
+                    <div class="icon-info">
+                        <img
+                            src="./assets/svgs/theatre-masks-svgrepo-com.svg"
+                            alt="Logo máscaras teatrais"
+                        />
+                    </div>
+                    <h1>103</h1>
+                    <h3>Peças teatrais encenadas</h3>
+                    <p>
+                        Proporcionando experiências transformadoras e
+                        emocionantes para milhares de espectadores.
+                    </p>
+                </div>
+                <div class="infos-impacto-grid">
+                    <div class="icon-info">
+                        <img
+                            src="./assets/svgs/ticket-svgrepo-com.svg"
+                            alt="Logo ticket"
+                        />
+                    </div>
+                    <h1>10</h1>
+                    <h3>Curtas-metragens produzidos</h3>
+                    <p>
+                        Contando histórias autênticas e impactantes que
+                        alcançaram grandes festivais e audiências.
+                    </p>
+                </div>
+            </section>
 
-        <section class="impacto-container">
-            <div class="impacto-header">
-                <h1>Impactos do Nós do Morro</h1>
-            </div>
-            <div class="swiper swiper-2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="scroll-item">
-                            <div class="icon">
-                                <img src="./assets/svgs/mortarboard-svgrepo-com.svg" alt="Logo capelo">
+            <section class="sobre-container">
+                <div class="sobre-text-content">
+                    <h1>Nós do Morro</h1>
+                    <p>
+                        No coração do Vidigal, o Grupo Nós do Morro transforma
+                        vidas através da arte há mais de 35 anos. Com projetos
+                        de teatro, cinema e cultura, já revelamos talentos,
+                        inspiramos gerações e promovemos oportunidades para a
+                        comunidade. Nossa missão é tornar a arte acessível a
+                        todos, incentivando educação, inclusão e expressão
+                        artística.
+                    </p>
+                    <a
+                        href="./sobre.html"
+                        class="button-89"
+                        id="btn-saiba-mais"
+                        role="button"
+                        >Saiba mais</a
+                    >
+                </div>
+                <div class="sobre-img-content">
+                    <img src="assets/imgs/foto-8.jpg" alt="" />
+                </div>
+            </section>
+
+            <section class="impacto-container">
+                <div class="impacto-header">
+                    <h1>Impactos do Nós do Morro</h1>
+                </div>
+                <div class="swiper swiper-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="scroll-item">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/svgs/mortarboard-svgrepo-com.svg"
+                                        alt="Logo capelo"
+                                    />
+                                </div>
+                                <h1>12.147</h1>
+                                <h3>Crianças, Jovens e adultos</h3>
+                                <p>
+                                    Nos últimos 30 anos, impactamos milhares de
+                                    vidas através da arte, cultura e educação.
+                                </p>
                             </div>
-                            <h1>12.147</h1>
-                            <h3>Crianças, Jovens e adultos</h3>
-                            <p>Nos últimos 30 anos, impactamos milhares de vidas através da arte, cultura e educação.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="scroll-item">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/svgs/person-standing-dress.svg"
+                                        alt="Logo de um personagem Feminino"
+                                    />
+                                    <img
+                                        src="./assets/svgs/person-standing.svg"
+                                        alt="Logo de um personagem masculino"
+                                    />
+                                </div>
+                                <h1>53%    47%</h1>
+                                <h3>Participação feminina e masculina</h3>
+                                <p>
+                                    Equilibramos oportunidades entre gêneros,
+                                    promovendo inclusão e diversidade no teatro
+                                    e cinema.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="scroll-item">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/svgs/shaking-hands-svgrepo-com.svg"
+                                        alt="Logo mãos dadas"
+                                    />
+                                </div>
+                                <h1>50.376</h1>
+                                <h3>Público alcançado</h3>
+                                <p>
+                                    Nossos espetáculos e produções emocionaram
+                                    milhares de espectadores ao longo dos anos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="scroll-item">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/svgs/person.svg"
+                                        alt="Logo personagem"
+                                    />
+                                </div>
+                                <h1>73%</h1>
+                                <h3>Concluíram o Ensino Médio</h3>
+                                <p>
+                                    Por meio da arte, incentivamos a educação e
+                                    o desenvolvimento pessoal de nossos alunos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="scroll-item">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/svgs/coin.svg"
+                                        alt="Logo moeda"
+                                    />
+                                </div>
+                                <h1>38,39%</h1>
+                                <h3>Atuam na área de arte e cultura</h3>
+                                <p>
+                                    Mais de um terço dos nossos beneficiários
+                                    seguem carreira no meio artístico.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="scroll-item">
+                                <div class="icon">
+                                    <img
+                                        src="./assets/svgs/theatre-masks-svgrepo-com.svg"
+                                        alt="Logo máscaras teatrais"
+                                    />
+                                </div>
+                                <h1>20</h1>
+                                <h3>Espetáculos profissionais</h3>
+                                <p>
+                                    O Grupo Nós do Morro já produziu diversas
+                                    peças que ganharam reconhecimento no Brasil
+                                    e no exterior.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="scroll-item">
-                            <div class="icon">
-                                <img src="./assets/svgs/person-standing-dress.svg" alt="Logo de um personagem Feminino">
-                                <img src="./assets/svgs/person-standing.svg" alt="Logo de um personagem masculino">
-                            </div>
-                            <h1>53%    47%</h1>
-                            <h3>Participação feminina e masculina</h3>
-                            <p>Equilibramos oportunidades entre gêneros, promovendo inclusão e diversidade no teatro e cinema.</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="scroll-item">
-                            <div class="icon">
-                                <img src="./assets/svgs/shaking-hands-svgrepo-com.svg" alt="Logo mãos dadas">
-                            </div>
-                            <h1>50.376</h1>
-                            <h3>Público alcançado</h3>
-                            <p>Nossos espetáculos e produções emocionaram milhares de espectadores ao longo dos anos.</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="scroll-item">
-                            <div class="icon">
-                                <img src="./assets/svgs/person.svg" alt="Logo personagem">
-                            </div>
-                            <h1>73%</h1>
-                            <h3>Concluíram o Ensino Médio</h3>
-                            <p>Por meio da arte, incentivamos a educação e o desenvolvimento pessoal de nossos alunos.</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="scroll-item">
-                            <div class="icon">
-                                <img src="./assets/svgs/coin.svg" alt="Logo moeda">
-                            </div>
-                            <h1>38,39%</h1>
-                            <h3>Atuam na área de arte e cultura</h3>
-                            <p>Mais de um terço dos nossos beneficiários seguem carreira no meio artístico.</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="scroll-item">
-                            <div class="icon">
-                                <img src="./assets/svgs/theatre-masks-svgrepo-com.svg" alt="Logo máscaras teatrais">
-                            </div>
-                            <h1>20</h1>
-                            <h3>Espetáculos profissionais</h3>
-                            <p>O Grupo Nós do Morro já produziu diversas peças que ganharam reconhecimento no Brasil e no exterior.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="swiper-button-prev custom-prev-button">
-                    <img src="./assets/svgs/left-arrow.svg" alt="Anterior">
-                </div>
-                <div class="swiper-button-next custom-next-button">
-                    <img src="./assets/svgs/right-arrow.svg" alt="Próximo">
-                </div>
-            </div>
-        </section>
 
-        <section class="divisor">
-            <div class="divisor-border"></div>
-            <div class="divisor-img">
-                <img src="../public/logo-small_fundo-branco.PNG" alt="Logo Nós do Morro">
-            </div>
-            <div class="divisor-border"></div>
-        </section>
+                    <div class="swiper-button-prev custom-prev-button">
+                        <img
+                            src="./assets/svgs/left-arrow.svg"
+                            alt="Anterior"
+                        />
+                    </div>
+                    <div class="swiper-button-next custom-next-button">
+                        <img
+                            src="./assets/svgs/right-arrow.svg"
+                            alt="Próximo"
+                        />
+                    </div>
+                </div>
+            </section>
 
-        <section class="galeria">
-            <h1>Fotos</h1>
-            <div class="galeria-container">
-                <ul>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-machado-3x4.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-ricardo-gama-2.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-ricardo-gama-3.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-ricardo-gama-4.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-1.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-2.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-3.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-4.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-5.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-6.jpeg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-7.jpeg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-8.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-9.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-apresentacao-1.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-apresentacao-2.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-apresentacao-3.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-apresentacao-4.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-e-proibido-brincar.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-pequenos-burgueses.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <figure>
-                                <img src='./assets/imgs/foto-sherminha.jpg' alt=''>
-                                <figcaption></figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-        </section>
-        
-    </main>
-    <footer class="footer-container">
-        <h4>Grupo Nós do Morro 2024 ©</h4>
-    </footer>
-</body>
+            <section class="divisor">
+                <div class="divisor-border"></div>
+                <div class="divisor-img">
+                    <img
+                        src="../public/logo-small_fundo-branco.PNG"
+                        alt="Logo Nós do Morro"
+                    />
+                </div>
+                <div class="divisor-border"></div>
+            </section>
+
+            <section class="galeria">
+                <h1>Fotos</h1>
+                <div class="galeria-container">
+                    <ul>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-machado-3x4.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-ricardo-gama-2.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-ricardo-gama-3.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-ricardo-gama-4.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-1.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-2.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-3.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-4.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-5.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-6.jpeg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-7.jpeg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-8.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-9.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-apresentacao-1.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-apresentacao-2.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-apresentacao-3.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-apresentacao-4.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-e-proibido-brincar.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-pequenos-burgueses.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <figure>
+                                    <img
+                                        src="./assets/imgs/foto-sherminha.jpg"
+                                        alt=""
+                                    />
+                                    <figcaption></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-container">
+            <h4>Grupo Nós do Morro 2024 ©</h4>
+        </footer>
+    </body>
 </html>

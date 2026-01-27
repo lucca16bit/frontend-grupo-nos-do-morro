@@ -1,10 +1,8 @@
-const galeriaContainer  = document.querySelector('.galeria-container');
-const modalGalery       = document.querySelector('.modal');
-const modalImg          = modalGalery.querySelector('img');
-const closeButton       = modalGalery.querySelector('.close-button');
-const headerGalery      = document.querySelector('header');
-
-
+const galeriaContainer = document.querySelector('.galeria-container');
+const modalGalery = document.querySelector('.modal');
+const modalImg = modalGalery.querySelector('img');
+const closeButton = modalGalery.querySelector('.close-button');
+const headerGalery = document.querySelector('header');
 
 function toggleHeader(show) {
     if (show) {

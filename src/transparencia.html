@@ -1,132 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparência | Grupo Nós do Morro</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transparência | Grupo Nós do Morro</title>
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/component/header.css">
-    <link rel="stylesheet" href="styles/transparencia.css">
-    <link rel="shortcut icon" href="../public/logo_fundo-branco.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/component/header.css" />
+        <link rel="stylesheet" href="styles/transparencia.css" />
+        <link
+            rel="shortcut icon"
+            href="../public/logo_fundo-branco.png"
+            type="image/x-icon"
+        />
 
-    <script src="js/header.js" defer></script>
-</head>
-<body>
-    <header class="header-container" id="header">
-        <button onclick="toggleSidebar()" class="header-btn-icon">
-            <img src="../public/list.svg" alt="" srcset="">
-        </button>
-        <div class="header-logo">
-            <img
-                src="../public/logo_fundo-branco.png" 
-                alt="LOGO"
-            >
-        </div>
-
-        <nav class="header-navigation" id="header-navigation">
+        <script src="js/header.js" defer></script>
+    </head>
+    <body>
+        <header class="header-container" id="header">
             <button onclick="toggleSidebar()" class="header-btn-icon">
-                <img src="../public/x-lg.svg" alt="" srcset="">
+                <img src="../public/list.svg" alt="" srcset="" />
             </button>
-            <a href="./index.html">
-                INÍCIO
-            </a>
-            <a href="./contato.html">
-                CONTATO
-            </a>
-            <a href="./sobre.html">
-                SOBRE NÓS
-            </a>
-            <a href="./transparencia.html"  class="active">
-                TRANSPARÊNCIA
-            </a>
-        </nav>
-    </header>
-    <main tabindex="0" onclick="closeSidebar()" class="main-container" id="content">
-        <div class="titulo">
-            <h1 id="main-title">Declaração de Publicidade</h1>
-        </div>
-
-        <section class="divisor">
-            <div class="divisor-border"></div>
-            <div class="divisor-img">
-                <img src="../public/logo-small_fundo-branco.PNG" alt="Logo Nós do Morro">
+            <div class="header-logo">
+                <img src="../public/logo_fundo-branco.png" alt="LOGO" />
             </div>
-            <div class="divisor-border"></div>
-        </section>
 
-        <section class="article-content">
-            <p>
-                O Grupo Nós do Morro, inscrito no CNPJ 30.120.620/0001-25 em cumprimento à decisão do STF no âmbito da ADPF 854/DF de 2024 que trata do atendimento dos critérios adicionais de transparência no que se refere à execução de projetos oriundo de emendas parlamentares,  torna publica as informações a respeito da proposta nª 5773/2024 a ser celebrada perante a Fundação Nacional de Artes – FUNARTE, as seguintes informações:
-            </p>
-        </section>
+            <nav class="header-navigation" id="header-navigation">
+                <button onclick="toggleSidebar()" class="header-btn-icon">
+                    <img src="../public/x-lg.svg" alt="" srcset="" />
+                </button>
+                <a href="./index.html"> INÍCIO </a>
+                <a href="./contato.html"> CONTATO </a>
+                <a href="./sobre.html"> SOBRE NÓS </a>
+                <a href="./publicacoes.html"> COMUNICADOS </a>
+                <a href="./transparencia.html" class="active">
+                    TRANSPARÊNCIA
+                </a>
+            </nav>
+        </header>
+        <main
+            tabindex="0"
+            onclick="closeSidebar()"
+            class="main-container"
+            id="content"
+        >
+            <div class="titulo">
+                <h1 id="main-title">Declaração de Publicidade</h1>
+            </div>
 
-        <section class="transparencia-container">
-            <div class="transparencia-item" id="margin-celular">
-                <h1>Termos de Fomento celebrados</h1>
-
-                <div class="transparencia-list-item">
-                    <ul>
-                        <li>
-                            <p><strong>OSC:</strong> Grupo Nós do Morro</p>
-                        </li>
-                        <li>
-                            <p><strong>CNPJ:</strong> 30.120.620/0001-25</p>
-                        </li>
-                        <li>
-                            <p><strong>Administração Pública:</strong></p>
-                            <img src="assets/imgs/funarte.png" alt="Fundação Nacional das Artes" id="funarte">
-                        </li>
-                        <li>
-                            <p><strong>Termo de Fomento:</strong> 964868/2024</p>
-                        </li>
-                        <li>
-                            <div class="pdf-buttons">
-                                <a href="assets/docs/SEI_FUNARTE -0026236_termo-de-fomento.pdf" target="_blank" class="btn visualizar">
-                                    Visualizar PDF
-                                </a>
-                                <a href="assets/docs/SEI_FUNARTE -0026236_termo-de-fomento.pdf" download class="btn baixar">
-                                    Baixar PDF
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <p><strong>Número da Emenda:</strong> 14680014</p>
-                        </li>
-                        <li>
-                            <p><strong>Parlamentar:</strong> Chico Alencar</p>
-                        </li>
-                        <li>
-                            <p><strong>Número da proposta:</strong> 5773/2024</p>
-                        </li>
-                        <li>
-                            <p><strong>Nome do Projeto:</strong> Arte que Educa e Transforma - Manutenção do Grupo Nós do Morro</p>
-                        </li>
-                        <li>
-                            <p><strong>Valor do projeto:</strong> R$ 400.080,00 (quatrocentos mil reais)</p>
-                        </li>
-                        <li>
-                            <p><strong>Data de Assinatura do Instrumento:</strong> 28/12/2024</p>
-                        </li>
-                        <li>
-                            <p><strong>Data de início:</strong> 01/12/2024</p>
-                        </li>
-                        <li>
-                            <p><strong>Data de encerramento:</strong> 31/07/2025</p>
-                        </li>
-                        <li>
-                            <p><strong>Projeto vigente, com prestação de contas estimada até:</strong> 29/11/2025</p>
-                        </li>
-                        <li>
-                            <p><strong>Situação da Prestação de Contas:</strong> projeto vigente com prestação de contas estimada para 29/11/2025</p>
-                        </li>
-                    </ul>
+            <section class="divisor">
+                <div class="divisor-border"></div>
+                <div class="divisor-img">
+                    <img
+                        src="../public/logo-small_fundo-branco.PNG"
+                        alt="Logo Nós do Morro"
+                    />
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-container">
-        <h5>Grupo Nós do Morro 2024 ©</h5>
-    </footer>
-</body>
+                <div class="divisor-border"></div>
+            </section>
+
+            <section class="article-content">
+                <p>
+                    O Grupo Nós do Morro, inscrito no CNPJ 30.120.620/0001-25 em
+                    cumprimento à decisão do STF no âmbito da ADPF 854/DF de
+                    2024 que trata do atendimento dos critérios adicionais de
+                    transparência no que se refere à execução de projetos
+                    oriundo de emendas parlamentares, torna publica as
+                    informações a respeito da proposta nª 5773/2024 a ser
+                    celebrada perante a Fundação Nacional de Artes – FUNARTE, as
+                    seguintes informações:
+                </p>
+            </section>
+
+            <section class="transparencia-container">
+                <div class="transparencia-item" id="margin-celular">
+                    <h1>Termos de Fomento celebrados</h1>
+
+                    <div class="transparencia-list-item">
+                        <ul>
+                            <li>
+                                <p><strong>OSC:</strong> Grupo Nós do Morro</p>
+                            </li>
+                            <li>
+                                <p><strong>CNPJ:</strong> 30.120.620/0001-25</p>
+                            </li>
+                            <li>
+                                <p><strong>Administração Pública:</strong></p>
+                                <img
+                                    src="assets/imgs/funarte.png"
+                                    alt="Fundação Nacional das Artes"
+                                    id="funarte"
+                                />
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Termo de Fomento:</strong>
+                                    964868/2024
+                                </p>
+                            </li>
+                            <li>
+                                <div class="pdf-buttons">
+                                    <a
+                                        href="assets/docs/SEI_FUNARTE -0026236_termo-de-fomento.pdf"
+                                        target="_blank"
+                                        class="btn visualizar"
+                                    >
+                                        Visualizar PDF
+                                    </a>
+                                    <a
+                                        href="assets/docs/SEI_FUNARTE -0026236_termo-de-fomento.pdf"
+                                        download
+                                        class="btn baixar"
+                                    >
+                                        Baixar PDF
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Número da Emenda:</strong> 14680014
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Parlamentar:</strong> Chico Alencar
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Número da proposta:</strong>
+                                    5773/2024
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Nome do Projeto:</strong> Arte que
+                                    Educa e Transforma - Manutenção do Grupo Nós
+                                    do Morro
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Valor do projeto:</strong> R$
+                                    400.080,00 (quatrocentos mil reais)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong
+                                        >Data de Assinatura do
+                                        Instrumento:</strong
+                                    >
+                                    28/12/2024
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Data de início:</strong> 01/12/2024
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Data de encerramento:</strong>
+                                    31/07/2025
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong
+                                        >Projeto vigente, com prestação de
+                                        contas estimada até:</strong
+                                    >
+                                    29/11/2025
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong
+                                        >Situação da Prestação de
+                                        Contas:</strong
+                                    >
+                                    projeto vigente com prestação de contas
+                                    estimada para 29/11/2025
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-container">
+            <h5>Grupo Nós do Morro 2024 ©</h5>
+        </footer>
+    </body>
 </html>

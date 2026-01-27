@@ -1,9 +1,9 @@
-let navLinks         = document.querySelectorAll('.header-navigation a');
-let header           = document.getElementById('header');
+let navLinks = document.querySelectorAll('.header-navigation a');
+let header = document.getElementById('header');
 let navigationHeader = document.getElementById('header-navigation');
-let content          = document.getElementById('content');
-let showSidebar      = false;
-const currentPath    = window.location.pathname;
+let content = document.getElementById('content');
+let showSidebar = false;
+const currentPath = window.location.pathname;
 
 function toggleSidebar() {
     showSidebar = !showSidebar;
@@ -27,15 +27,14 @@ function closeSidebar() {
     }
 }
 
-window.addEventListener('resize', function(event) {
-    if(window.innerWidth > 768 && showSidebar) 
-    {  
+window.addEventListener('resize', function (event) {
+    if (window.innerWidth > 768 && showSidebar) {
         showSidebar = true;
         toggleSidebar();
     }
 });
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
     if (link.getAttribute('href') === currentPath.split('/').pop()) {
         link.classList.add('active');
     }
