@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Comunicados | Grupo Nós do Morro</title>
+
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/component/header.css" />
+        <link rel="stylesheet" href="styles/publicacoes.css" />
+        <link
+            rel="shortcut icon"
+            href="../public/logo_fundo-branco.png"
+            type="image/x-icon"
+        />
+        <!-- SWIPER CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <script src="js/header.js" defer></script>
+        <script src="js/carousel.js" defer></script>
+        <script src="js/search.js" defer></script>
+        <!-- SWIPER API -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+            defer
+        ></script>
+        <script src="./js/swiper.js" defer></script>
+    </head>
+    <body>
+        <header class="header-container" id="header">
+            <button onclick="toggleSidebar()" class="header-btn-icon">
+                <img src="../public/list.svg" alt="" srcset="" />
+            </button>
+            <div class="header-logo">
+                <img src="../public/logo_fundo-branco.png" alt="LOGO" />
+            </div>
+
+            <nav class="header-navigation" id="header-navigation">
+                <button onclick="toggleSidebar()" class="header-btn-icon">
+                    <img src="../public/x-lg.svg" alt="" srcset="" />
+                </button>
+                <a href="./index.html"> INÍCIO </a>
+                <a href="./contato.html"> CONTATO </a>
+                <a href="./sobre.html"> SOBRE NÓS </a>
+                <a href="./publicacoes.html" class="active"> COMUNICADOS </a>
+                <a href="./transparencia.html"> TRANSPARÊNCIA </a>
+            </nav>
+        </header>
+        <main
+            tabindex="0"
+            onclick="closeSidebar()"
+            class="main-container"
+            id="content"
+        >
+            <div class="titulo">
+                <h1>Comunicados</h1>
+            </div>
+            <section class="divisor">
+                <div class="divisor-border"></div>
+                <div class="divisor-img">
+                    <img
+                        src="../public/logo-small_fundo-branco.PNG"
+                        alt="Logo Nós do Morro"
+                    />
+                </div>
+                <div class="divisor-border"></div>
+            </section>
+            <section class="inicio">
+                <p>
+                    Acompanhe nossos comunicados, editais, oportunidades de
+                    contratação para serviços e fornecimentos relacionados aos
+                    projetos em execução. Fique atento aos documentos publicados
+                    e participe!
+                </p>
+            </section>
+
+            <section class="edital-search-container">
+                <div class="edital-search-wrapper">
+                    <input
+                        type="text"
+                        id="edital-input"
+                        placeholder="Buscar comunicado, edital ou oportunidade..."
+                    />
+                    <button
+                        class="edital-search-btn"
+                        type="button"
+                        onclick="buscarComunicados()"
+                    >
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                        >
+                            <circle
+                                cx="9"
+                                cy="9"
+                                r="7"
+                                stroke="white"
+                                stroke-width="2"
+                            />
+                            <line
+                                x1="14.4142"
+                                y1="14"
+                                x2="19"
+                                y2="18.5858"
+                                stroke="white"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="edital-container">
+                <div class="edital-grid" id="comunicados-grid">
+                    <!-- Comunicado 1 - EDITAL ASSEMBLEIA GERAL ELEITORAL -->
+                    <div
+                        class="grid-content"
+                        data-keywords="edital assembleia geral eleitoral eleição diretoria convocação sócios"
+                    >
+                        <div class="grid-content-img"></div>
+                        <div class="grid-content-body">
+                            <div class="grid-content-title">
+                                <h3>
+                                    EDITAL DE CONVOCAÇÃO - Assembleia Geral
+                                    Eleitoral
+                                </h3>
+                            </div>
+                            <div class="grid-content-date">
+                                <span>
+                                    23 de Janeiro de 2026 |
+                                    <strong>Assembleia: 29/02 às 19h</strong>
+                                </span>
+                            </div>
+                            <div class="grid-content-description">
+                                <span>
+                                    O Grupo de Teatro Nós do Morro convoca todos
+                                    os sócios para Assembleia Geral Eleitoral no
+                                    Casarão (Rua Doutor Olinto de Magalhães, nº
+                                    54 – Vidigal, RJ). Pauta: Eleição da
+                                    Diretoria e Assuntos Gerais. Sua presença é
+                                    fundamental!
+                                </span>
+                            </div>
+                            <div class="grid-content-footer">
+                                <span class="grid-content-category"
+                                    >Edital Oficial</span
+                                >
+                                <a
+                                    href="./assets/docs/edital-assembleia-eleitoral-fev-2026.pdf"
+                                    class="grid-content-link"
+                                    >Ver edital completo →</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="empty-state hidden" id="empty-state">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <h3>Nenhum comunicado encontrado</h3>
+                    <p>Tente buscar por outros termos</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-container">
+            <h4>Grupo Nós do Morro 2025 ©</h4>
+        </footer>
+    </body>
+</html>
