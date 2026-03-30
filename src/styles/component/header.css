@@ -35,7 +35,7 @@ header {
 }
 
 .header-container a {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Avenir Light';
     color: var(--primary-color-brown);
     text-decoration: none;
     transition: 1s;

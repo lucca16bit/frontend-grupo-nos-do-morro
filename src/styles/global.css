@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Cormorant Garamond', sans-serif;
+    font-family: 'Avenir Light';
     font-style: normal;
     background-color: var(--primary-color-white);
     height: 100%;
@@ -61,6 +61,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .titulo {
+        font-size: 22px;
         width: 40vh;
     }
 }

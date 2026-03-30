@@ -48,7 +48,7 @@
 
 .transparencia-content {
     background-color: var(--secondary-color-brown);
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -84,7 +84,6 @@
     margin: 1.5em 3em;
     color: var(--primary-color-white);
     list-style-type: none;
-    width: 90%;
 }
 
 .termo-content {
@@ -103,6 +102,10 @@
     text-align: left;
 }
 
+.termo-list-item h2 {
+    color: var(--primary-color-white);
+}
+
 .termo-list-item p {
     font-family: 'Avenir Light';
     font-size: 18px;
@@ -112,6 +115,7 @@
 .termo-list-item ul li {
     margin: 1em 6em;
     color: var(--primary-color-white);
+    list-style-type: none;
 }
 
 .pdf-buttons {
