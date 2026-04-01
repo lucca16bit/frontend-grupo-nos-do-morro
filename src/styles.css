@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -11,4 +12,30 @@
 	--color-primary-color-brown: rgb(72, 39, 16);
 	--color-secondary-color-brown: #18110f;
 	--color-primary-color-gray: #666666d7;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #1a1a1a;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #525252;
 }
